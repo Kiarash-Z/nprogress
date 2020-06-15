@@ -11,7 +11,7 @@
     root.NProgress = factory();
   }
 
-})(this, function() 
+})(this, function() {
   var NProgress = {};
 
   NProgress.version = '0.2.0';
