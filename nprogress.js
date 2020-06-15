@@ -11,7 +11,7 @@
     root.NProgress = factory();
   }
 
-})(this, function() {
+})(this, function() 
   var NProgress = {};
 
   NProgress.version = '0.2.0';
@@ -233,7 +233,7 @@
 
 
     var bar = progress.querySelector(Settings.barSelector),
-        perc = fromStart ? '-100' : toBarPerc(NProgress.status || 0),
+        perc = fromStart ? '100' : toBarPerc(NProgress.status || 0),
         parent = isDOM(Settings.parent)
           ? Settings.parent
           : document.querySelector(Settings.parent),
@@ -333,7 +333,7 @@
    */
 
   function toBarPerc(n) {
-    return (-1 + n) * 100;
+    return 100 - (n * 100);
   }
 
 
